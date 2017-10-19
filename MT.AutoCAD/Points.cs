@@ -24,7 +24,7 @@ namespace MT.AutoCAD
             return pointsCoordinates;
         }
 
-        public static void AddPoints(List<double[]> points)
+        public static void Add(List<double[]> points)
         {
             var acadDocument = DocumentLocator.GetAcadDocument();
 

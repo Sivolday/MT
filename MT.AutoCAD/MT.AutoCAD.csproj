@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DocumentLocator.cs" />
+    <Compile Include="Poliline.cs" />
     <Compile Include="Primitives.cs" />
     <Compile Include="Points.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

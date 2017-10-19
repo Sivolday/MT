@@ -12,7 +12,8 @@ namespace MT.ConsoleTester
         static void Main(string[] args)
         {
             // CheckGetSelectedPointsCoordinates();
-            CheckAddPoints();
+            // CheckAddPoints();
+            CheckAddPoliLine();
 
             Console.ReadKey();
         }
@@ -32,7 +33,19 @@ namespace MT.ConsoleTester
                 points.Add(new[] { i, i, 0 });
             }
 
-            Points.AddPoints(points);
+            Points.Add(points);
+        }
+
+        private static void CheckAddPoliLine()
+        {
+            var points = new List<double[]>();
+
+            for (double i = 0; i < 10; i++)
+            {
+                points.Add(new[] { i, i, 0 });
+            }
+
+            PoliLine.Add(points);
         }
     }
 }
