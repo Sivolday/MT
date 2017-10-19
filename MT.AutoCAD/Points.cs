@@ -23,5 +23,15 @@ namespace MT.AutoCAD
 
             return pointsCoordinates;
         }
+
+        public static void AddPoints(List<double[]> points)
+        {
+            var acadDocument = DocumentLocator.GetAcadDocument();
+
+            points.ForEach
+            (
+                pt => acadDocument.Database.ModelSpace.AddPoint(pt)
+            );
+        }
     }
 }
