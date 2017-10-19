@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT.SharedComponents", "MT.SharedComponents\MT.SharedComponents.csproj", "{7FBDE973-6216-4D95-ADCE-EB1EF97E1C42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT.AutoCAD", "MT.AutoCAD\MT.AutoCAD.csproj", "{AFCCDC44-7B01-43CC-BF1F-BA3E86E64F2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MT.ConsoleTester", "MT.ConsoleTester\MT.ConsoleTester.csproj", "{67997BAD-9565-45C6-A3CB-81F3D6FB6152}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7FBDE973-6216-4D95-ADCE-EB1EF97E1C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FBDE973-6216-4D95-ADCE-EB1EF97E1C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FBDE973-6216-4D95-ADCE-EB1EF97E1C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCCDC44-7B01-43CC-BF1F-BA3E86E64F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCCDC44-7B01-43CC-BF1F-BA3E86E64F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCCDC44-7B01-43CC-BF1F-BA3E86E64F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCCDC44-7B01-43CC-BF1F-BA3E86E64F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67997BAD-9565-45C6-A3CB-81F3D6FB6152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67997BAD-9565-45C6-A3CB-81F3D6FB6152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67997BAD-9565-45C6-A3CB-81F3D6FB6152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67997BAD-9565-45C6-A3CB-81F3D6FB6152}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
