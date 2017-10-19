@@ -19,7 +19,7 @@ namespace MT.SharedComponents.Extensions
             sb.Remove(sb.Length - 1, 1);    // Снос последней запятой
             sb.Append("}");
 
-            Clipboard.SetText(sb.ToString());
+            // Clipboard.SetText(sb.ToString());
         }
     }
 }

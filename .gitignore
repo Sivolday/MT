@@ -291,3 +291,4 @@ __pycache__/
 *.bak
 *.dwl
 *.dwl2
+/sh.exe.stackdump

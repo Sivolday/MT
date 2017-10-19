@@ -19,5 +19,11 @@ namespace MT.SharedComponents
         /// <summary> Расстояние между двумя точками, через разность координат </summary>
         public static double EuclideanDistance(double dx, double dy) =>
             Math.Sqrt(dx * dx + dy * dy);
+
+        /// <summary>
+        /// арктангенс гиперболический
+        /// </summary>
+        public static double ATanH(double x) =>
+             (Math.Log(1 + x) - Math.Log(1 - x)) / 2;
     }
 }

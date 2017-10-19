@@ -11,10 +11,18 @@ namespace MT.SharedComponents
         /// <returns>Цвет</returns>
         public static Color HeatMap(double value, double min, double max)
         {
+            // Переход в область положительных значений
+            if (min < 0)
+            {
+                max -= min;
+                value -= min;
+                min = 0.0;
+            }
+            
             var val = (value - min) / (max - min);
 
             // Если вдруг поделили на ноль
-            if (double.IsNaN(val))
+            if (double.IsNaN(val) || val < 0)
                 val = 0.0;
 
             return new Color
