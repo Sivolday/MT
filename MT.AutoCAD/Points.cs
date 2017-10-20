@@ -30,7 +30,15 @@ namespace MT.AutoCAD
 
             points.ForEach
             (
-                pt => acadDocument.Database.ModelSpace.AddPoint(pt)
+                pt => acadDocument.Database.ModelSpace.AddPoint
+                (
+                    new[]
+                    {
+                        pt[0] * DocumentLocator.Scale,
+                        pt[1] * DocumentLocator.Scale,
+                        pt[2] * DocumentLocator.Scale
+                    }
+                )
             );
         }
     }

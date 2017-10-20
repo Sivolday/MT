@@ -14,6 +14,11 @@ namespace MT.AutoCAD
         private static AcadDocument _acadDocument;
 
         /// <summary>
+        /// Масштаб экспорта
+        /// </summary>
+        public static double Scale { get; set; } = 1000;
+
+        /// <summary>
         /// Заполучить активный документ в автокаде
         /// </summary>
         public static AcadDocument GetAcadDocument()
