@@ -63,6 +63,8 @@
     <Compile Include="FileHelper.cs" />
     <Compile Include="KeeperApplicationCondition.cs" />
     <Compile Include="MathHelper.cs" />
+    <Compile Include="ModelFEMElementDividerVM.cs" />
+    <Compile Include="PerformanceTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModelBase.cs" />
     <Compile Include="WolframHelper.cs" />
