@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace MT.SharedComponents
 {
     public class WolframHelper
     {
-        public List<double[]> ListData { get; set; } = new List<double[]>();
+        public double[][] ListData { get; set; }
 
-        public void ExportList(List<double[]> listData = null, string filePath = "")
+        public void ExportList(double[][] listData = null, string filePath = "")
         {
             if (filePath == string.Empty)
                 filePath = FileHelper.GetPathToMyProject("ListLinePlot.m");
@@ -18,18 +19,27 @@ namespace MT.SharedComponents
                 ListData = listData;
 
             var sb = new StringBuilder();
-            sb.AppendLine("{");
 
-            ListData.ForEach(row =>
-                sb.AppendLine("\t{" + $"{row[0]}, {row[1]}" + "},")
-            );
+
+            sb.AppendLine("{\n");
+            
+            for (int i = 0; i < ListData.Length; i++)
+            {
+                sb.Append("\t{");
+                for (int j = 0; j < ListData[i].Length; j++)
+                {
+                    sb.Append($" {ListData[i][j]},");
+                }
+                sb.Remove(sb.Length - 1, 1);    // Снос последней запятой
+                sb.AppendLine(" },");
+            }
 
             sb.Remove(sb.Length - 3, 1);    // Снос последней запятой
             sb.Replace("E", "*^");          // Замена экспоненты
 
             sb.AppendLine("}\n");
 
-            using (var sw = new StreamWriter(filePath.Replace("RollGlider.View", "!RollGlider.Research"), false, Encoding.Default))
+            using (var sw = new StreamWriter(filePath, false, Encoding.Default))
             {
                 sw.Write(sb);
             }
