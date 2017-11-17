@@ -59,6 +59,7 @@
     <Compile Include="Extensions\ListExtension.cs" />
     <Compile Include="Extensions\ObjectExtension.cs" />
     <Compile Include="Extensions\PointExtension.cs" />
+    <Compile Include="Extensions\RandomExtension.cs" />
     <Compile Include="Extensions\VectorExtension.cs" />
     <Compile Include="FileHelper.cs" />
     <Compile Include="KeeperApplicationCondition.cs" />

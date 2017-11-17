@@ -18,8 +18,15 @@ namespace MT.SharedComponents
                 value -= min;
                 min = 0.0;
             }
-            
+
+            if (value >= max)
+            {
+                value = max;
+            }
+
+
             var val = (value - min) / (max - min);
+
 
             // Если вдруг поделили на ноль
             if (double.IsNaN(val) || val < 0)
