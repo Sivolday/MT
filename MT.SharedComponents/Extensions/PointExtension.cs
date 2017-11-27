@@ -1,9 +1,10 @@
-﻿using MathNet.Spatial.Euclidean;
+﻿//using MathNet.Spatial.Euclidean;
 
 namespace MT.SharedComponents.Extensions
 {
     public static class PointExtension
     {
+        /*
         public static System.Windows.Media.Media3D.Point3D ToPoint3D(this MathNet.Spatial.Euclidean.Point3D p)
         {
             return new System.Windows.Media.Media3D.Point3D(p.X, p.Y, p.Z);
@@ -34,5 +35,6 @@ namespace MT.SharedComponents.Extensions
         {
             return (a - b).IsParallelTo(b - c);
         }
+        */
     }
 }
